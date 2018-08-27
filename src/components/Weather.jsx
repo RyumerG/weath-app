@@ -8,17 +8,10 @@ const Weather = () => {
   }).catch((error) => {
     return error
   });
-  
+
   return (
-    <div className='App'>
-      <Navigation/>
-      {
-        Data.map ((data, key) => {
-          return (
-            <DataDisplay key={key} firstName={data.first_name} lastName={data.last_name}/>
-          )
-        })
-      }
+    <div>
+
     </div>
     )
 };
