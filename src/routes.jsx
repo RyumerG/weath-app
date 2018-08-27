@@ -5,12 +5,14 @@ import {
 } from 'react-router-dom';
 import App from './app';
 import About from './components/About';
+import Weather from './components/Weather';
 import Sample from './components/Sample';
 
 const Routes = () => (
   <Router>
     <div>
       <Route exact path="/" component={App}/>
+      <Route path="/weather" component={Weather}/>
       <Route path="/about" component={About}/>
       <Route path="/sample" component={Sample}/>
     </div>

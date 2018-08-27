@@ -13,33 +13,16 @@ const App = () => {
 console.log(Data)
 return (
   <div className='App'>
-
-<Navigation/>
-
-{
-  Data.map ((data, key) => {
-
-  
-      return (<DataDisplay key={key} firstName={data.first_name} lastName={data.last_name}/>
-    )
-  })
-}
-
-
-
-
-
-
-    <div>
-      <h1>It Works!</h1>
-      <p>This React project just works including <span className={styles.redButton}>css-module</span> local styles.</p>
-      <p>Enjoy!</p>
-    </div>
-  </div>)
+    <Navigation/>
+    {
+      Data.map ((data, key) => {
+        return (
+          <DataDisplay key={key} firstName={data.first_name} lastName={data.last_name}/>
+        )
+      })
+    }
+  </div>
+  )
 };
-
-
-
-
 
 export default App;

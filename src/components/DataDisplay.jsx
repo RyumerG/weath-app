@@ -5,16 +5,11 @@ import "styles/base/_main.sass"  // Global styles
 
 
 const DataDisplay = ({ firstName, lastName}) => {
-return (
-
-
-
-
-
+  return (
     <div className="FontColor">
       {firstName} {lastName}
-
-  </div>)
+    </div>
+  );
 };
 
 DataDisplay.propTypes = {
